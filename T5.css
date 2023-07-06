@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2? family= Palanquin+Dark:wght@500 & display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.body
+{height: 100vh;
+ width: 100%;
+    background: linear-gradient(60deg,#d6b6d9bd,
+#dad8f3,
+#bedfff,
+#889bd3a9,
+#aa80de90);
+  background-size:  600% 600%;
+ animation: backgroundt 14s infinite linear ;
+   background-position: center;
+
+
+}
+.cloud
+{
+   position: absolute;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   background: url(cloud.png);
+   opacity: 80%;
+   animation:animate 50s linear infinite;
+
+
+
+}
+
+
+.container
+{
+    background: rgba(236, 227, 241, 0.731);
+    width: 899px;
+    height: 498px;
+    border-radius:15px;
+     margin: 4px;
+     position: absolute;
+     left: 50%;
+    top:50%;
+   transform: translate(-50%,-50%);
+   box-shadow: 0 8px 32px rgba(48, 2, 121, 0.495);
+    backdrop-filter: blur(4px);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "a2 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a3"
+    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+    "a2 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a3";
+  
+
+}
+   
+.item
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 40px; */
+   
+    font-weight: 700;
+    background: rgba(43, 0, 66, 0.731);
+    border-radius: 15px;
+    gap:39px;
+   
+   
+} 
+.item1{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a1;
+    display: flex;
+    flex-direction: left;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap:2px;
+
+
+}
+.item1::before
+           {
+            content: "PERFECTION ";
+            color: rgb(74, 19, 193);
+            font-size: 30px;
+            font-weight: 490px;
+            font-family: Palanquin Dark;
+            position: absolute;
+            height: 30px;
+            text-align:left ;
+            margin-right: 550PX;
+            margin-top: 3px;
+            text-decoration: solid;}
+.t
+{ font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(74, 19, 193);
+    margin-right:9px;
+    gap:70px;
+
+
+}
+.item2{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a2;
+    display: flex;
+    flex-direction: left;
+    flex-wrap: wrap;
+    justify-content: end;
+    
+}
+.item3{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a3;
+}
+.item4{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a4;
+}
+.item5{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a5;
+}
+.item6{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a6;
+}
+.item5 img
+{
+    /* transform : rotate(5deg); */
+    margin-bottom: -38px;
+    z-index: 2;
+
+ 
+}
+
+.h2
+{
+ font-size: 30px;
+}
+.div p{
+    font-size: 120px;
+ font-weight: 400;
+}
+
+
+@keyframes backgroundt {
+0%
+{ background-position: 0 85%;
+
+
+}50%
+{
+    background-position: 100% 20%;
+}
+
+100%
+{
+       background-position: 0 85%;
+}
+
+}
+@keyframes animate
+{
+    0%{
+        background-position: 0px;
+
+    }
+    100%{
+        background-position: -5440px;
+    }
+}
+.container::after {
+    content: '';
+    height: 72%;
+    width: 40%;
+    background: rgba(215, 50, 230, 0.08);
+    position: absolute;
+    clip-path: circle(35% at 80% 80% 10%);
+    display: flex;
+    margin-left: 455px;
+    margin-top: 88px;
+border-radius: 180px;
+
+
+    
+  
+}
+.item4 span
+{
+font-size: 50px;
+color: rgba(8, 133, 190, 0.884);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration-line: 2px dotted rgb(226, 43, 43);
+}
+.item4 p
+{
+margin-top: 30px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 19px;
+font-weight: 80px;
+color: rgba(0, 0, 0, 0.717);
+}
+@media (max-width:600px) 
+{  
+    body{
+        background: green;
+    }
+    .item
+    {  
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 20px;
+    margin-top: 20px;
+
+
+    }
+    .container
+{
+    background: rgba(236, 227, 241, 0.731);
+    width: 310px;
+    height: 450px;
+    border-radius:15px;
+     margin: 4px;
+     position: absolute;
+     left: 50%;
+    top:50%;
+   transform: translate(-50%,-50%);
+   box-shadow: 0 8px 32px rgba(48, 2, 121, 0.495);
+    backdrop-filter: blur(4px);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas:
+    "a1 a1 a1 a1 a1 a1"
+    "a3 a2 a2 a2 a2 a6"
+    "a3 a4 a4 a4 a4 a6"
+    "a3 a4 a4 a4 a4 a6 "
+    "a3 a4 a4 a4 a4 a6 "
+    "a3 a5 a5 a5 a5 a6"
+    "a3 a5 a5 a5 a5 a6"
+
+ 
+  
+
+}
+.item1
+{
+    background: rgba(236, 227, 241, 0.674);
+    grid-area: a1;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2px;
+}
+.t{
+font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(74, 19, 193);
+    margin-right:9px;
+    gap:70px;
+
+}.item1::before
+{
+ content: "PERFECTION ";
+ color: rgb(74, 19, 193);
+ font-size: 23.5px;
+ font-weight: 100px;
+ font-family: Palanquin Dark;
+ position: absolute;
+ height: 30px;
+ text-align:center ;
+ display: flex;
+ justify-content: center;
+ margin-right:9px;
+ margin-bottom: 19px;
+ text-decoration: solid;}
+ .item4 span
+{display: flex;
+    justify-content: center;
+font-size:25px;
+text-align: center;
+margin-bottom: 1px;
+color: rgba(8, 133, 190, 0.884);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration-line: 2px dotted rgb(226, 43, 43);
+}
+.item4 p
+{
+margin-bottom: 20px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 16px;
+font-weight: 80px;
+color: rgba(0, 0, 0, 0.717);
+
+}
+.item5 img
+{
+    /* transform : rotate(5deg); */
+    margin-bottom: -20px;
+    margin-right: 20px;
+    z-index: 2;
+    width: 182px;
+    height: 182px;
+
+ 
+}
+.container::after {
+    content: '';
+    height: 30%;
+    width: 60%;
+    background: rgba(215, 50, 230, 0.08);
+    position: absolute;
+    clip-path: circle(35% at 60% 60% 20%);
+    display: flex;
+    justify-content: center;
+    margin-left:57px;
+    margin-top: 308px;
+border-radius: 270px;
+opacity: inherit;
+}}
+@media (min-width:601px)  and (max-width:800px){
+
+    body{
+       background:brown;
+   }
+      @media (min-width:601px)  and (max-width:800px){
+
+                 body{
+                    background:brown;
+                }
+                .container
+                {
+                    background: rgba(236, 227, 241, 0.731);
+                    width: 650px;
+                    height: 450px;
+                    border-radius:15px;
+                     margin: 4px;
+                     position: absolute;
+                     left: 50%;
+                    top:50%;
+                   transform: translate(-50%,-50%);
+                   box-shadow: 0 8px 32px rgba(48, 2, 121, 0.495);
+                    backdrop-filter: blur(4px);
+                    display: grid;
+                    grid-template-columns: repeat(12,1fr);
+                    grid-template-rows: repeat(6,1fr);
+                    grid-template-areas:
+                    "a2 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a3"
+                    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+                    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+                    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+                    "a2 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a3"
+                    "a2 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a3";
+                  
+                
+                }
+                .item1::before
+           {
+            content: "PERFECTION ";
+            color: rgb(74, 19, 193);
+            font-size: 25px;
+            font-weight: 490px;
+            font-family: Palanquin Dark;
+            position: absolute;
+            height: 30px;
+            text-align:left ;
+            margin-right: 379px;
+            margin-top: 3px;
+            text-decoration: solid;}
+            
+           
+           .t
+        {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         color: rgb(74, 19, 193);
+         margin-right:9px;
+         gap:70px;
+           font-size: 16px;}
+           .item4 span
+          {
+           font-size: 36px;
+           color: rgba(8, 133, 190, 0.884);
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration-line: 2px dotted rgb(226, 43, 43);
+        }
+        .item4 p
+       {
+         margin-bottom: 18px;
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: 16px;
+         font-weight: 80px;
+          color: rgba(0, 0, 0, 0.717);
+
+       }
+       .item5 img
+      {
+    /* transform : rotate(5deg); */
+    margin-bottom: -20px;
+    margin-right: -35px;
+    z-index: 2;
+    width: 265px;
+    height: 265px;
+
+ 
+      }
+      .container::after {
+        content: '';
+        height: 62%;
+        width: 43%;
+        background: rgba(215, 50, 230, 0.08);
+        position: absolute;
+        clip-path: circle(35% at 80% 80% 10%);
+        display: flex;
+        margin-left: 340px;
+        margin-top: 88px;
+    border-radius: 180px;
+    
+    
+        
+      
+    }
+ 
+}}
